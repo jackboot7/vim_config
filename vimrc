@@ -14,26 +14,27 @@ call pathogen#helptags()
 """""""""""""""""""
 " General 
 """""""""""""""""""
-"
-" syntax on: Set the syntax highlighting on.
-"
+" Turn of the compatible mode with vi.
+set nocompatible
 
+" syntax on: Set the syntax highlighting on.
 syntax on
 
 """""""""""""""""""
 " Identation
 """""""""""""""""""
-"
 " expandtab: replace tabs with spaces.
-" tabstop: the number of spaces a tab will be replaced for.
-" softtabstop: vim will see sets of spaces as a tab. Usefull to delete a 'tab'
-"
-
 set expandtab
-set tabstop=4
+
+" softtabstop: vim will see sets of spaces as a tab. Usefull to delete a 'tab'
 set softtabstop=4
+
+" tabstop: the number of spaces a tab will be replaced for.
+set tabstop=4
+
 
 """"""""""""""""""
 " Text
 """"""""""""""""""
 set textwidth=80
+
