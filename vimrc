@@ -9,6 +9,8 @@
 """""""""""""""""""""""""
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#infect()
+
 
 
 """""""""""""""""""
@@ -38,3 +40,10 @@ set tabstop=4
 """"""""""""""""""
 set textwidth=70
 
+
+"""""""""""""""""""""
+" Vim Omni Complete
+"""""""""""""""""""""
+
+filetype plugin on
+set ofu=syntaxcomplete#Complete
