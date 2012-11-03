@@ -36,5 +36,5 @@ set tabstop=4
 """"""""""""""""""
 " Text
 """"""""""""""""""
-set textwidth=80
+set textwidth=70
 
