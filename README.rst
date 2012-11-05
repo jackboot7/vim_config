@@ -11,4 +11,9 @@ Plugins Installed
 
 Pathogen: Vim package manager.
 
+Syntastic
+SuperTab
+Pythoncomplete
+Vim-Django-Support
+
 
