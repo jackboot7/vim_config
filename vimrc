@@ -45,13 +45,13 @@ set numberwidth=3
 " Text
 """"""""""""""""""
 set textwidth=0
-set nowrap
+"set nowrap
 set showmatch
 set ruler
 
 
 """""""""""""""""""
-" Identation
+" Indentation
 """""""""""""""""""
 " expandtab: replace tabs with spaces.
 set expandtab
@@ -62,7 +62,9 @@ set softtabstop=4
 " tabstop: the number of spaces a tab will be replaced for.
 set tabstop=4
 
+set shiftwidth=4
 
+filetype plugin indent on
 
 """""""""""""""""""""
 " Syntastic Settings.
