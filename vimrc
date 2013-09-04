@@ -85,25 +85,25 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 
-"""""""""""""""""""""
-" Vim Omni Complete
-"""""""""""""""""""""
-filetype plugin on
-set ofu=syntaxcomplete#Complete
-
-set completeopt=menu,menuone,longest
-set pumheight=10
-
 
 """""""""""""""""""""
 " Super Tab
 """""""""""""""""""""
-let g:SuperTabDefaultCompletionType='context'
-let g:SuperTabMappingForward='<nul>'
-let g:SuperTabMappingBackward='<s-nul>'
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabMappingForward = '<nul>'
+let g:SuperTabMappingBackward = '<s-nul>'
 
-let g:SuperTabLongestHighlight=0
-
-
+let g:SuperTabLongestHighlight = 0
 
 
+
+"""""""""""""""""""""
+" Vim Omni Complete
+"""""""""""""""""""""
+filetype plugin on
+au FileType python set omnifunc=pythoncomplete#Complete
+
+set ofu=syntaxcomplete#Complete
+
+set completeopt=menu,menuone,longest
+set pumheight=10
