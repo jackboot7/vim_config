@@ -7,6 +7,10 @@
 "
 "
 "
+"nnoremap <Left> :echoe "Use h"<CR>
+"nnoremap <Right> :echoe "Use l"<CR>
+"nnoremap <Up> :echoe "Use k"<CR>
+"nnoremap <Down> :echoe "Use j"<CR>
 
 """""""""""""""""""""""""
 " UTF8 Support
@@ -20,9 +24,9 @@ end
 """""""""""""""""""""""""
 " Pathogen plugin setup
 """""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-call pathogen#infect()
+execute pathogen#runtime_append_all_bundles()
+execute pathogen#helptags()
+execute pathogen#infect()
 
 
 
@@ -107,3 +111,41 @@ set ofu=syntaxcomplete#Complete
 
 set completeopt=menu,menuone,longest
 set pumheight=10
+
+""""""""""""""""""""
+" TagBar 
+""""""""""""""""""""
+" Mapping to the F9 key
+nmap <F9> :TagbarToggle<CR>
+
+
+" Based in the `Setting Up Go, Vim and Vim-go` from:
+" http://dev.knacht.net/blog/2014/12/14/setting-up-go/
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+    \ }
