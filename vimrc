@@ -115,10 +115,6 @@ set pumheight=10
 """"""""""""""""""""
 " TagBar 
 """"""""""""""""""""
-" Mapping to the F9 key
-nmap <F9> :TagbarToggle<CR>
-
-
 " Based in the `Setting Up Go, Vim and Vim-go` from:
 " http://dev.knacht.net/blog/2014/12/14/setting-up-go/
 
@@ -149,3 +145,13 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+
+""""""""""""""""""""
+" Mappings
+""""""""""""""""""""
+
+" Mapping Tagbar to the F9 key
+nmap <F9> :TagbarToggle<CR>
+
+"Mapping NerdTree Open to the F10 key
+nmap <F10> :NERDTreeToggle<CR>
